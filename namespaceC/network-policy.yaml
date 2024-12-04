@@ -9,6 +9,5 @@ spec:
   - Ingress
   ingress:
   - from:
-    - namespaceSelector:
-        matchLabels:
-          myspace : namespace-a
+    - ipBlock:
+        cidr: 10.244.0.142/32
