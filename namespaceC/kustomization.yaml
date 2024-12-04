@@ -5,3 +5,4 @@ namespace: namespace-c
 
 resources:
 - deployment.yaml
+- network-policy.yaml
