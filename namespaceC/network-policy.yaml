@@ -7,7 +7,12 @@ spec:
   podSelector: {}
   policyTypes:
   - Ingress
+  - Egress
   ingress:
   - from:
     - ipBlock:
-        cidr: 10.244.120.77/32
+        cidr: 10.244.120.79/32
+  egress:
+  - from:
+    - ipBlock:
+        cidr: 10.244.120.78/32
