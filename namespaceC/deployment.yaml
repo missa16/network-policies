@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alex-app
+  labels:
+    app: alex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alex
+  template:
+    metadata:
+      labels:
+        app: alex
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
