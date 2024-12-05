@@ -16,6 +16,8 @@ ingress:
   - ports:
     - port: 82
 
+### Option 4 :  que d'un certain namespace
 
-### Option 4 : refuser tout traffic
+
+### Option 5 : refuser tout traffic
 ingress: []
