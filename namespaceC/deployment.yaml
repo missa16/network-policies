@@ -4,12 +4,13 @@ metadata:
   name: alex-app
   labels:
     app: alex
+    project : namespace-c
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: alex
-      project : namespace-c
+      
   template:
     metadata:
       labels:
