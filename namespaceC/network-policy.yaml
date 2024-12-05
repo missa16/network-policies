@@ -11,3 +11,4 @@ spec:
     - podSelector:
         matchLabels:
           app: clover
+          project : namespace-a
