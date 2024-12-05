@@ -7,4 +7,11 @@ ingress:
           matchLabels:
             app: clover
 
+### Option 2 : Limiter le traffic par adresse IP (par vraiment pratique si on l’expose ou si on redémarre notre argocd)
 
+
+### Option 3 : refuser tout traffic
+ingress: []
+
+
+### Accéder que d'un certain port
