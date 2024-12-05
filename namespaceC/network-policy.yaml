@@ -6,4 +6,6 @@ spec:
   podSelector:
     matchLabels:
       app: alex
-  ingress: []
+  ingress:
+  - ports:
+    - port: 82
