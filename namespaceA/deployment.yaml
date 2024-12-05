@@ -4,6 +4,7 @@ metadata:
   name: clover-app
   labels:
     app: clover
+    project : namespace-a
 spec:
   replicas: 1
   selector:

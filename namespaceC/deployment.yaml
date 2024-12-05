@@ -9,6 +9,7 @@ spec:
   selector:
     matchLabels:
       app: alex
+      project : namespace-c
   template:
     metadata:
       labels:
