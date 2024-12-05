@@ -11,8 +11,8 @@ spec:
     - Egress
   ingress:
   - from:
-      - ipBlock:
-          cidr: 10.244.130.74/32       
+    - ipBlock:
+        cidr: 10.244.130.74/32       
   egress:
   - to:
     - ipBlock:
