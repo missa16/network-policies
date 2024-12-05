@@ -8,6 +8,6 @@ spec:
       app: alex
   ingress:
     - from:
-      - podSelector:
-          matchLabels:
-            app: clover
+        - podSelector:
+            matchLabels:
+              app: clover
