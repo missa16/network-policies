@@ -4,4 +4,5 @@ kind: Kustomization
 namespace: namespace-b
 
 resources:
-- deployment.yaml
+- deployment-sam.yaml
+- deployment-sam2.yaml

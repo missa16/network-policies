@@ -1,18 +1,13 @@
-apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
 metadata:
   name: network-policy-alex
-  namespace: namespace-c
 spec:
-  podSelector: {}
-  policyTypes:
-  - Ingress
-  - Egress
+  podSelector:
+    matchLabels:
+      app: alex
   ingress:
   - from:
-    - ipBlock:
-        cidr: 10.244.120.79/32
-  egress:
-  - from:
-    - ipBlock:
-        cidr: 10.244.120.78/32
+      - podSelector:
+          matchLabels:
+            app: clover

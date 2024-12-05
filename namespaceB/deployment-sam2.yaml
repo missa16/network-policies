@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: clover-app
+  name: sam2-app
   labels:
-    app: clover
+    app: sam2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: clover
+      app: sam2
   template:
     metadata:
       labels:
-        app: clover
+        app: sam2
     spec:
       containers:
       - name: nginx
         image: nginx:latest
         ports:
-        - containerPort: 82
+        - containerPort: 80
