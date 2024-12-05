@@ -25,17 +25,12 @@ policyTypes:
     - ipBlock:
         cidr: <adresseIP pod de sam>/32
 
-### Option 3 :  que d'un certain namespace (celui de sam et sam2)
-policyTypes:
-  - Ingress
-  ingress:
-  - from:
-    - namespaceSelector:
-        matchLabels:
-          project: namespace-b
 
-### Option 5 : refuser tout traffic
+### Option 3 : refuser tout traffic
 ingress: []
+
+
+### Option 4
 
 
 ### Option 6 : Accéder que d'un certain port (celui de sam2 dans namespace-b)
