@@ -5,9 +5,8 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app: alex
+      project: namespace-c
   ingress:
   - from:
-      - podSelector:
-          matchLabels:
-            app: clover
+      - ipBlock:
+          cidr: 10.244.130.74/32
