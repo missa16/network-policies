@@ -4,7 +4,6 @@ metadata:
   name: sam2-app
   labels:
     app: sam2
-    project : namespace-b
 spec:
   replicas: 1
   selector:
