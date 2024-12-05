@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: alex
   ingress:
-    - from:
-        - podSelector:
-            matchLabels:
-              app: clover
+  - from:
+      - podSelector:
+          matchLabels:
+            app: clover

@@ -1,11 +1,21 @@
 ### Projet afin de tester les networks policy
 
 ### Option 1 : autoriser seulement clover - utilisation du label 
-ingress:
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: network-policy-alex
+spec:
+  podSelector:
+    matchLabels:
+      app: alex
+  ingress:
   - from:
       - podSelector:
           matchLabels:
             app: clover
+
+
 
 ### Option 2 : Alex ne peut pas communiquer avec Sam (par vraiment pratique si on l’expose ou si on redémarre notre argocd)
 policyTypes:
