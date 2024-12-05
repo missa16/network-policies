@@ -9,6 +9,7 @@ spec:
   selector:
     matchLabels:
       app: clover
+      project : namespace-a
   template:
     metadata:
       labels:
